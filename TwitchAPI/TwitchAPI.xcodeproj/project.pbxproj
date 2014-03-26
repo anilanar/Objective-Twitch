@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFFBC4F318E397E000826676 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBC4F218E397E000826676 /* Cocoa.framework */; };
+		DFFBC50118E397E000826676 /* TwitchAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFBC50018E397E000826676 /* TwitchAPI.m */; };
+		DFFBC52018E39C8000826676 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBC51F18E39C8000826676 /* Security.framework */; };
+		DFFBC52218E39C9200826676 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBC52118E39C9200826676 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DFFBC4EF18E397E000826676 /* TwitchAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwitchAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFBC4F218E397E000826676 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DFFBC4F518E397E000826676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFFBC4F618E397E000826676 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DFFBC4F718E397E000826676 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DFFBC4FA18E397E000826676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFBC4FE18E397E000826676 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		DFFBC4FF18E397E000826676 /* TwitchAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitchAPI.h; sourceTree = "<group>"; };
+		DFFBC50018E397E000826676 /* TwitchAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitchAPI.m; sourceTree = "<group>"; };
+		DFFBC51F18E39C8000826676 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Security.framework; sourceTree = "<group>"; };
+		DFFBC52118E39C9200826676 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFFBC4EB18E397DF00826676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFBC52018E39C8000826676 /* Security.framework in Frameworks */,
+				DFFBC52218E39C9200826676 /* SystemConfiguration.framework in Frameworks */,
+				DFFBC4F318E397E000826676 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFFBC4E518E397DF00826676 = {
+			isa = PBXGroup;
+			children = (
+				DFFBC4F818E397E000826676 /* TwitchAPI */,
+				DFFBC4F118E397E000826676 /* Frameworks */,
+				DFFBC4F018E397E000826676 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFFBC4F018E397E000826676 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBC4EF18E397E000826676 /* TwitchAPI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFFBC4F118E397E000826676 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBC51D18E3988100826676 /* Linked Frameworks */,
+				DFFBC4F418E397E000826676 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFFBC4F418E397E000826676 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBC4F518E397E000826676 /* Foundation.framework */,
+				DFFBC4F618E397E000826676 /* CoreData.framework */,
+				DFFBC4F718E397E000826676 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DFFBC4F818E397E000826676 /* TwitchAPI */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBC51E18E398D900826676 /* source */,
+				DFFBC4F918E397E000826676 /* Other Source */,
+			);
+			path = TwitchAPI;
+			sourceTree = "<group>";
+		};
+		DFFBC4F918E397E000826676 /* Other Source */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBC4FA18E397E000826676 /* Info.plist */,
+				DFFBC4FE18E397E000826676 /* Prefix.pch */,
+			);
+			name = "Other Source";
+			sourceTree = "<group>";
+		};
+		DFFBC51D18E3988100826676 /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBC52118E39C9200826676 /* SystemConfiguration.framework */,
+				DFFBC51F18E39C8000826676 /* Security.framework */,
+				DFFBC4F218E397E000826676 /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		DFFBC51E18E398D900826676 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				DFFBC4FF18E397E000826676 /* TwitchAPI.h */,
+				DFFBC50018E397E000826676 /* TwitchAPI.m */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFFBC4EC18E397DF00826676 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DFFBC4EE18E397DF00826676 /* TwitchAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFBC51718E397E000826676 /* Build configuration list for PBXNativeTarget "TwitchAPI" */;
+			buildPhases = (
+				DFFBC4EA18E397DF00826676 /* Sources */,
+				DFFBC4EB18E397DF00826676 /* Frameworks */,
+				DFFBC4EC18E397DF00826676 /* Headers */,
+				DFFBC4ED18E397DF00826676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitchAPI;
+			productName = TwitchAPI;
+			productReference = DFFBC4EF18E397E000826676 /* TwitchAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFFBC4E618E397DF00826676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = PolyMountain;
+			};
+			buildConfigurationList = DFFBC4E918E397DF00826676 /* Build configuration list for PBXProject "TwitchAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFFBC4E518E397DF00826676;
+			productRefGroup = DFFBC4F018E397E000826676 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFFBC4EE18E397DF00826676 /* TwitchAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFFBC4ED18E397DF00826676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFFBC4EA18E397DF00826676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFBC50118E397E000826676 /* TwitchAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DFFBC51518E397E000826676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DFFBC51618E397E000826676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DFFBC51818E397E000826676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TwitchAPI/Prefix.pch;
+				INFOPLIST_FILE = TwitchAPI/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		DFFBC51918E397E000826676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TwitchAPI/Prefix.pch;
+				INFOPLIST_FILE = TwitchAPI/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFFBC4E918E397DF00826676 /* Build configuration list for PBXProject "TwitchAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFBC51518E397E000826676 /* Debug */,
+				DFFBC51618E397E000826676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFBC51718E397E000826676 /* Build configuration list for PBXNativeTarget "TwitchAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFBC51818E397E000826676 /* Debug */,
+				DFFBC51918E397E000826676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFFBC4E618E397DF00826676 /* Project object */;
+}
