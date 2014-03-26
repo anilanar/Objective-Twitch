@@ -18,9 +18,10 @@ The following snippet demonstrates how to get the game the user is playing.
 
 [TwitchAPI InfoByUsername:@"PolyMountain"
     runOnMainThread:NO
-        withBlock:^(NSArray *info){
-			NSLog(@"%@ is playing %@", info.display_name, info.game);
-		}];
+        withBlock:^(NSArray *info)
+{
+	NSLog(@"%@ is playing %@", info.display_name, info.game);
+}];
 ```
 
 Change Log
