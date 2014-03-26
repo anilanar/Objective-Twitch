@@ -6,7 +6,7 @@ Objective-Twitch is an Objective-C framework for OSX that provides an easy to us
 How To
 --------
 
-    git clone https://github.com/kgn/Spectttator.git
+    git clone https://github.com/polymountain/objective-twitch.git
 
 Example
 --------
