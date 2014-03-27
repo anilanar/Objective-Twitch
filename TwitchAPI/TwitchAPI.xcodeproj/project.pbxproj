@@ -7,14 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF42018818E4B66F00E3C0BF /* TTeam.h in Headers */ = {isa = PBXBuildFile; fileRef = DF42018618E4B66F00E3C0BF /* TTeam.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF42018918E4B66F00E3C0BF /* TTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = DF42018718E4B66F00E3C0BF /* TTeam.m */; };
+		DF42018D18E4C31B00E3C0BF /* TMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = DF42018B18E4C31B00E3C0BF /* TMethods.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DF42018E18E4C31B00E3C0BF /* TMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = DF42018C18E4C31B00E3C0BF /* TMethods.m */; };
+		DF4201F618E4DBC500E3C0BF /* MNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4201ED18E4DBC500E3C0BF /* MNetwork.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DF4201F718E4DBC500E3C0BF /* MNetworkHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4201EE18E4DBC500E3C0BF /* MNetworkHTTPRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DF4201F818E4DBC500E3C0BF /* MNetworkHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4201EF18E4DBC500E3C0BF /* MNetworkHTTPRequest.m */; };
+		DF4201F918E4DBC500E3C0BF /* MNetworkImageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4201F018E4DBC500E3C0BF /* MNetworkImageRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DF4201FA18E4DBC500E3C0BF /* MNetworkImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4201F118E4DBC500E3C0BF /* MNetworkImageRequest.m */; };
+		DF4201FB18E4DBC500E3C0BF /* MNetworkJSONRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4201F218E4DBC500E3C0BF /* MNetworkJSONRequest.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DF4201FC18E4DBC500E3C0BF /* MNetworkJSONRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4201F318E4DBC500E3C0BF /* MNetworkJSONRequest.m */; };
+		DF4201FD18E4DBC500E3C0BF /* MNetworkURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4201F418E4DBC500E3C0BF /* MNetworkURLConnection.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DF4201FE18E4DBC500E3C0BF /* MNetworkURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4201F518E4DBC500E3C0BF /* MNetworkURLConnection.m */; };
+		DF42020418E4DD3B00E3C0BF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF42020318E4DD3B00E3C0BF /* SystemConfiguration.framework */; };
+		DF42020618E4DD4800E3C0BF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF42020518E4DD4800E3C0BF /* Security.framework */; };
 		DFFBC4F318E397E000826676 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBC4F218E397E000826676 /* Cocoa.framework */; };
-		DFFBC52018E39C8000826676 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBC51F18E39C8000826676 /* Security.framework */; };
-		DFFBC52218E39C9200826676 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFBC52118E39C9200826676 /* SystemConfiguration.framework */; };
-		DFFBC52518E39EBC00826676 /* TwitchAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFBC52318E39EBC00826676 /* TwitchAPI.h */; };
+		DFFBC52518E39EBC00826676 /* TwitchAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFBC52318E39EBC00826676 /* TwitchAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFFBC52618E39EBC00826676 /* TwitchAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFBC52418E39EBC00826676 /* TwitchAPI.m */; };
+		DFFFD7E118E4968A00DE7F32 /* TUser.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFFD7DF18E4968A00DE7F32 /* TUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFFFD7E218E4968A00DE7F32 /* TUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD7E018E4968A00DE7F32 /* TUser.m */; };
+		DFFFD7E618E4973700DE7F32 /* TDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFFD7E418E4973700DE7F32 /* TDictionary.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DFFFD7E718E4973700DE7F32 /* TDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD7E518E4973700DE7F32 /* TDictionary.m */; };
+		DFFFD7EF18E4991000DE7F32 /* TObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFFD7ED18E4991000DE7F32 /* TObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFFFD7F018E4991000DE7F32 /* TObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD7EE18E4991000DE7F32 /* TObject.m */; };
+		DFFFD7F418E4A74900DE7F32 /* TChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFFD7F218E4A74900DE7F32 /* TChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFFFD7F518E4A74900DE7F32 /* TChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFFD7F318E4A74900DE7F32 /* TChannel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF42018618E4B66F00E3C0BF /* TTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTeam.h; path = source/team/TTeam.h; sourceTree = "<group>"; };
+		DF42018718E4B66F00E3C0BF /* TTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTeam.m; path = source/team/TTeam.m; sourceTree = "<group>"; };
+		DF42018B18E4C31B00E3C0BF /* TMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMethods.h; path = source/methods/TMethods.h; sourceTree = "<group>"; };
+		DF42018C18E4C31B00E3C0BF /* TMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMethods.m; path = source/methods/TMethods.m; sourceTree = "<group>"; };
+		DF4201ED18E4DBC500E3C0BF /* MNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MNetwork.h; path = source/network/MNetwork.h; sourceTree = "<group>"; };
+		DF4201EE18E4DBC500E3C0BF /* MNetworkHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MNetworkHTTPRequest.h; path = source/network/MNetworkHTTPRequest.h; sourceTree = "<group>"; };
+		DF4201EF18E4DBC500E3C0BF /* MNetworkHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MNetworkHTTPRequest.m; path = source/network/MNetworkHTTPRequest.m; sourceTree = "<group>"; };
+		DF4201F018E4DBC500E3C0BF /* MNetworkImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MNetworkImageRequest.h; path = source/network/MNetworkImageRequest.h; sourceTree = "<group>"; };
+		DF4201F118E4DBC500E3C0BF /* MNetworkImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MNetworkImageRequest.m; path = source/network/MNetworkImageRequest.m; sourceTree = "<group>"; };
+		DF4201F218E4DBC500E3C0BF /* MNetworkJSONRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MNetworkJSONRequest.h; path = source/network/MNetworkJSONRequest.h; sourceTree = "<group>"; };
+		DF4201F318E4DBC500E3C0BF /* MNetworkJSONRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MNetworkJSONRequest.m; path = source/network/MNetworkJSONRequest.m; sourceTree = "<group>"; };
+		DF4201F418E4DBC500E3C0BF /* MNetworkURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MNetworkURLConnection.h; path = source/network/MNetworkURLConnection.h; sourceTree = "<group>"; };
+		DF4201F518E4DBC500E3C0BF /* MNetworkURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MNetworkURLConnection.m; path = source/network/MNetworkURLConnection.m; sourceTree = "<group>"; };
+		DF42020318E4DD3B00E3C0BF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = ../../../../../System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<group>"; };
+		DF42020518E4DD4800E3C0BF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = ../../../../../System/Library/Frameworks/Security.framework; sourceTree = "<group>"; };
 		DFFBC4EF18E397E000826676 /* TwitchAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TwitchAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFBC4F218E397E000826676 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DFFBC4F518E397E000826676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -22,10 +58,16 @@
 		DFFBC4F718E397E000826676 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DFFBC4FA18E397E000826676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFFBC4FE18E397E000826676 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		DFFBC51F18E39C8000826676 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Security.framework; sourceTree = "<group>"; };
-		DFFBC52118E39C9200826676 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
 		DFFBC52318E39EBC00826676 /* TwitchAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitchAPI.h; path = source/TwitchAPI.h; sourceTree = "<group>"; };
 		DFFBC52418E39EBC00826676 /* TwitchAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitchAPI.m; path = source/TwitchAPI.m; sourceTree = "<group>"; };
+		DFFFD7DF18E4968A00DE7F32 /* TUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TUser.h; path = source/user/TUser.h; sourceTree = "<group>"; };
+		DFFFD7E018E4968A00DE7F32 /* TUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TUser.m; path = source/user/TUser.m; sourceTree = "<group>"; };
+		DFFFD7E418E4973700DE7F32 /* TDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDictionary.h; path = source/dictionary/TDictionary.h; sourceTree = "<group>"; };
+		DFFFD7E518E4973700DE7F32 /* TDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDictionary.m; path = source/dictionary/TDictionary.m; sourceTree = "<group>"; };
+		DFFFD7ED18E4991000DE7F32 /* TObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TObject.h; path = source/object/TObject.h; sourceTree = "<group>"; };
+		DFFFD7EE18E4991000DE7F32 /* TObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TObject.m; path = source/object/TObject.m; sourceTree = "<group>"; };
+		DFFFD7F218E4A74900DE7F32 /* TChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TChannel.h; path = source/channel/TChannel.h; sourceTree = "<group>"; };
+		DFFFD7F318E4A74900DE7F32 /* TChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TChannel.m; path = source/channel/TChannel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,8 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFFBC52018E39C8000826676 /* Security.framework in Frameworks */,
-				DFFBC52218E39C9200826676 /* SystemConfiguration.framework in Frameworks */,
+				DF42020418E4DD3B00E3C0BF /* SystemConfiguration.framework in Frameworks */,
+				DF42020618E4DD4800E3C0BF /* Security.framework in Frameworks */,
 				DFFBC4F318E397E000826676 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +84,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF42018418E4B63F00E3C0BF /* team */ = {
+			isa = PBXGroup;
+			children = (
+				DF42018618E4B66F00E3C0BF /* TTeam.h */,
+				DF42018718E4B66F00E3C0BF /* TTeam.m */,
+			);
+			name = team;
+			sourceTree = "<group>";
+		};
+		DF42018A18E4C2F100E3C0BF /* methods */ = {
+			isa = PBXGroup;
+			children = (
+				DF42018B18E4C31B00E3C0BF /* TMethods.h */,
+				DF42018C18E4C31B00E3C0BF /* TMethods.m */,
+			);
+			name = methods;
+			sourceTree = "<group>";
+		};
+		DF4201EC18E4DB9B00E3C0BF /* network */ = {
+			isa = PBXGroup;
+			children = (
+				DF4201ED18E4DBC500E3C0BF /* MNetwork.h */,
+				DF4201EE18E4DBC500E3C0BF /* MNetworkHTTPRequest.h */,
+				DF4201EF18E4DBC500E3C0BF /* MNetworkHTTPRequest.m */,
+				DF4201F018E4DBC500E3C0BF /* MNetworkImageRequest.h */,
+				DF4201F118E4DBC500E3C0BF /* MNetworkImageRequest.m */,
+				DF4201F218E4DBC500E3C0BF /* MNetworkJSONRequest.h */,
+				DF4201F318E4DBC500E3C0BF /* MNetworkJSONRequest.m */,
+				DF4201F418E4DBC500E3C0BF /* MNetworkURLConnection.h */,
+				DF4201F518E4DBC500E3C0BF /* MNetworkURLConnection.m */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
 		DFFBC4E518E397DF00826676 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +175,8 @@
 		DFFBC51D18E3988100826676 /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFFBC52118E39C9200826676 /* SystemConfiguration.framework */,
-				DFFBC51F18E39C8000826676 /* Security.framework */,
+				DF42020518E4DD4800E3C0BF /* Security.framework */,
+				DF42020318E4DD3B00E3C0BF /* SystemConfiguration.framework */,
 				DFFBC4F218E397E000826676 /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -109,10 +185,53 @@
 		DFFBC51E18E398D900826676 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				DF4201EC18E4DB9B00E3C0BF /* network */,
+				DFFFD7DE18E4966E00DE7F32 /* user */,
+				DF42018418E4B63F00E3C0BF /* team */,
+				DFFFD7E818E498C400DE7F32 /* object */,
+				DFFFD7F118E4A72700DE7F32 /* channel */,
+				DF42018A18E4C2F100E3C0BF /* methods */,
+				DFFFD7E318E4971900DE7F32 /* dictionary */,
 				DFFBC52318E39EBC00826676 /* TwitchAPI.h */,
 				DFFBC52418E39EBC00826676 /* TwitchAPI.m */,
 			);
 			name = source;
+			sourceTree = "<group>";
+		};
+		DFFFD7DE18E4966E00DE7F32 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				DFFFD7DF18E4968A00DE7F32 /* TUser.h */,
+				DFFFD7E018E4968A00DE7F32 /* TUser.m */,
+			);
+			name = user;
+			sourceTree = "<group>";
+		};
+		DFFFD7E318E4971900DE7F32 /* dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				DFFFD7E418E4973700DE7F32 /* TDictionary.h */,
+				DFFFD7E518E4973700DE7F32 /* TDictionary.m */,
+			);
+			name = dictionary;
+			sourceTree = "<group>";
+		};
+		DFFFD7E818E498C400DE7F32 /* object */ = {
+			isa = PBXGroup;
+			children = (
+				DFFFD7ED18E4991000DE7F32 /* TObject.h */,
+				DFFFD7EE18E4991000DE7F32 /* TObject.m */,
+			);
+			name = object;
+			sourceTree = "<group>";
+		};
+		DFFFD7F118E4A72700DE7F32 /* channel */ = {
+			isa = PBXGroup;
+			children = (
+				DFFFD7F218E4A74900DE7F32 /* TChannel.h */,
+				DFFFD7F318E4A74900DE7F32 /* TChannel.m */,
+			);
+			name = channel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +242,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFFBC52518E39EBC00826676 /* TwitchAPI.h in Headers */,
+				DF42018818E4B66F00E3C0BF /* TTeam.h in Headers */,
+				DFFFD7E118E4968A00DE7F32 /* TUser.h in Headers */,
+				DFFFD7F418E4A74900DE7F32 /* TChannel.h in Headers */,
+				DFFFD7EF18E4991000DE7F32 /* TObject.h in Headers */,
+				DF42018D18E4C31B00E3C0BF /* TMethods.h in Headers */,
+				DF4201F918E4DBC500E3C0BF /* MNetworkImageRequest.h in Headers */,
+				DF4201F618E4DBC500E3C0BF /* MNetwork.h in Headers */,
+				DF4201F718E4DBC500E3C0BF /* MNetworkHTTPRequest.h in Headers */,
+				DF4201FB18E4DBC500E3C0BF /* MNetworkJSONRequest.h in Headers */,
+				DF4201FD18E4DBC500E3C0BF /* MNetworkURLConnection.h in Headers */,
+				DFFFD7E618E4973700DE7F32 /* TDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +266,6 @@
 				DFFBC4EA18E397DF00826676 /* Sources */,
 				DFFBC4EB18E397DF00826676 /* Frameworks */,
 				DFFBC4EC18E397DF00826676 /* Headers */,
-				DFFBC4ED18E397DF00826676 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -173,22 +302,22 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		DFFBC4ED18E397DF00826676 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		DFFBC4EA18E397DF00826676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4201F818E4DBC500E3C0BF /* MNetworkHTTPRequest.m in Sources */,
 				DFFBC52618E39EBC00826676 /* TwitchAPI.m in Sources */,
+				DFFFD7F018E4991000DE7F32 /* TObject.m in Sources */,
+				DF42018E18E4C31B00E3C0BF /* TMethods.m in Sources */,
+				DF4201FE18E4DBC500E3C0BF /* MNetworkURLConnection.m in Sources */,
+				DFFFD7E218E4968A00DE7F32 /* TUser.m in Sources */,
+				DF42018918E4B66F00E3C0BF /* TTeam.m in Sources */,
+				DF4201FC18E4DBC500E3C0BF /* MNetworkJSONRequest.m in Sources */,
+				DFFFD7E718E4973700DE7F32 /* TDictionary.m in Sources */,
+				DFFFD7F518E4A74900DE7F32 /* TChannel.m in Sources */,
+				DF4201FA18E4DBC500E3C0BF /* MNetworkImageRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +349,7 @@
 		DFFBC51818E397E000826676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -238,6 +368,7 @@
 		DFFBC51918E397E000826676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

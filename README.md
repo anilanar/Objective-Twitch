@@ -27,7 +27,7 @@ The following snippet demonstrates how to get the game the user is playing.
 Change Log
 --------
 
-* **0.0.4** - Initial release with support for the full Twitch api.
+* **0.0.4** - Initial release with support for the full Twitch GET api.
 
 License
 --------

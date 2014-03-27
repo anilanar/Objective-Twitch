@@ -8,6 +8,62 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TUser.h"
+#import "TTeam.h"
+#import "TChannel.h"
+
 @interface TwitchAPI : NSObject
+
+/*
+ *
+ *
+ */
+@property (nonatomic, strong, readonly) NSArray *follower;
+
+/*
+ *
+ *
+ */
+@property (nonatomic, strong, readonly) NSArray *subscriber;
+
+/*
+ *
+ *
+ */
+@property (nonatomic, strong, readonly) NSString *user;
+
+
+
+/*
+ *
+ *
+ */
++ (void)requestFollowersWithName:(NSString *)name
+                 runOnMainThread:(BOOL)runOnMainThread
+                       withBlock:(void (^)(NSArray *followers))block;
+
+/*
+ *
+ *
+ */
++ (void)requestUserWithName:(NSString *)name
+            runOnMainThread:(BOOL)runOnMainThread
+                  withBlock:(void (^)(TUser *user))block;
+
+/*
+ *
+ *
+ */
++ (void)requestTeamWithName:(NSString *)name
+            runOnMainThread:(BOOL)runOnMainThread
+                  withBlock:(void (^)(TTeam *user))block;
+
+/*
+ *
+ *
+ */
++ (void)requestChannelWithName:(NSString *)name
+               runOnMainThread:(BOOL)runOnMainThread
+                     withBlock:(void (^)(TChannel *user))block;
 
 @end
