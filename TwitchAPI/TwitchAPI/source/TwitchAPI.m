@@ -27,7 +27,7 @@
                 runOnMainThread:(BOOL)runOnMainThread
                       withBlock:(void (^)(NSArray *followers))block
 {
-    NSString *url = [NSString stringWithFormat:@"https://api.twitch.tv/channels/%@/follows", name];
+    NSString *url = [NSString stringWithFormat:@"https://api.twitch.tv/kraken/channels/%@/follows", name];
         
     [TMethods requestUsersWithURL:[NSURL URLWithString:url]
                   runOnMainThread:runOnMainThread
@@ -41,7 +41,7 @@
             runOnMainThread:(BOOL)runOnMainThread
                   withBlock:(void (^)(TUser *user))block
 {
-    NSString *url = [NSString stringWithFormat:@"https://api.twitch.tv/users/%@", name];
+    NSString *url = [NSString stringWithFormat:@"https://api.twitch.tv/kraken/users/%@", name];
     
     [[MNetworkJSONRequest JSONRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]
                               success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSDictionary *json)
@@ -75,7 +75,7 @@
             runOnMainThread:(BOOL)runOnMainThread
                   withBlock:(void (^)(TTeam *user))block
 {
-    NSString *url = [NSString stringWithFormat:@"https://api.twitch.tv/teams/%@", name];
+    NSString *url = [NSString stringWithFormat:@"https://api.twitch.tv/kraken/teams/%@", name];
     
     [[MNetworkJSONRequest JSONRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]
                               success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSDictionary *json)
@@ -109,7 +109,7 @@
                runOnMainThread:(BOOL)runOnMainThread
                      withBlock:(void (^)(TChannel *channel))block
 {
-    NSString *url = [NSString stringWithFormat:@"https://api.twitch.tv/channels/%@", name];
+    NSString *url = [NSString stringWithFormat:@"https://api.twitch.tv/kraken/channels/%@", name];
     
     [[MNetworkJSONRequest JSONRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]
                               success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSDictionary *json)
