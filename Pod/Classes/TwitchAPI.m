@@ -42,10 +42,10 @@
   [[MNetworkJSONRequest JSONRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]
                               success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSDictionary *json)
     {
-        NSArray *channelsAsDict = [[json objectForKey:@"follows"] objectForKey:@"channel"];
+        NSArray *channelItems = [json objectForKey:@"follows"];
         NSMutableArray *channels = [[NSMutableArray alloc] init];
-        for(int i = 0; i < channelsAsDict.count; ++i) {
-            [channels addObject: [[TChannel alloc] initWithDictionary:channelsAsDict[i]]];
+        for(int i = 0; i < channelItems.count; ++i) {
+            [channels addObject: [[TChannel alloc] initWithDictionary:[channelItems[i] objectForKey:@"channel"]]];
         }
         
         if(runOnMainThread) {
