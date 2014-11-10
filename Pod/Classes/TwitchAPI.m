@@ -34,6 +34,37 @@
                         withBlock:block];
 }
 
++ (void)requestFollowingChannelsWithUsername:(NSString *)username
+                runOnMainThread:(BOOL)runOnMainThread
+                    withBlock:(void (^)(NSArray *channels))block
+{
+  NSString *url = [NSString stringWithFormat:@"https://api.twitch.tv/kraken/users/%@/follows/channels", username];
+  [[MNetworkJSONRequest JSONRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]
+                              success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSDictionary *json)
+    {
+        NSArray *channelsAsDict = [json objectForKey:@"follows"];
+        NSMutableArray *channels = [[NSMutableArray alloc] init];
+        for(int i = 0; i < channelsAsDict.count; ++i) {
+            [channels addObject: [[TChannel alloc] initWithDictionary:channelsAsDict[i]]];
+        }
+        
+        if(runOnMainThread) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                block(channels);
+            });
+        } else {
+            block(channels);
+        }
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        if(runOnMainThread) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                block(nil);
+            });
+        } else {
+            block(nil);
+        }
+    }] start];
+}
 
 
 //
@@ -48,7 +79,7 @@
       {
           TUser *user = nil;
           
-          if(![[json objectForKey:@"message"] isEqualToString:@"Not found"]) {
+          if(![[json objectForKey:@"message"] count]) {
               user = [[TUser alloc] initWithDictionary:json];
           }
           
