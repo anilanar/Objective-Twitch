@@ -226,17 +226,18 @@ static void MSwizzleClassMethodWithClassAndSelectorUsingBlock(Class klass, SEL s
 - (void)setCompletionBlockWithSuccess:(void (^)(MNetworkHTTPRequest *operation, id responseObject))success
                               failure:(void (^)(MNetworkHTTPRequest *operation, NSError *error))failure
 {
+    __block MNetworkHTTPRequest *this = self;
     self.completionBlock = ^{
-        if (self.error) {
+        if (this.error) {
             if (failure) {
-                dispatch_async(self.failureCallbackQueue ?: dispatch_get_main_queue(), ^{
-                    failure(self, self.error);
+                dispatch_async(this.failureCallbackQueue ?: dispatch_get_main_queue(), ^{
+                    failure(this, this.error);
                 });
             }
         } else {
             if (success) {
-                dispatch_async(self.successCallbackQueue ?: dispatch_get_main_queue(), ^{
-                    success(self, self.responseData);
+                dispatch_async(this.successCallbackQueue ?: dispatch_get_main_queue(), ^{
+                    success(this, this.responseData);
                 });
             }
         }
