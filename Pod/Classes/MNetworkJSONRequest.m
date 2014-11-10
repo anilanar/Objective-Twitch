@@ -102,7 +102,7 @@ static dispatch_queue_t json_request_operation_processing_queue() {
                               failure:(void (^)(MNetworkHTTPRequest *operation, NSError *error))failure
 {   
     __block MNetworkJSONRequest *this = self;
-    this.completionBlock = ^ {
+    self.completionBlock = ^ {
         if (this.error) {
             if (failure) {
                 dispatch_async(this.failureCallbackQueue ?: dispatch_get_main_queue(), ^{
