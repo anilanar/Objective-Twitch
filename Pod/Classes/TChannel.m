@@ -27,13 +27,13 @@
 @property (nonatomic, strong, readwrite) NSURL *profile_banner_url;
 
 //
-@property (nonatomic, readwrite) NSUInteger *delay;
-@property (nonatomic, readwrite) NSUInteger *views;
-@property (nonatomic, readwrite) NSUInteger *follower;
+@property (nonatomic, readwrite) NSUInteger delay;
+@property (nonatomic, readwrite) NSUInteger views;
+@property (nonatomic, readwrite) NSUInteger follower;
 
 //
-@property (nonatomic, readwrite) BOOL *mature;
-@property (nonatomic, readwrite) BOOL *reported;
+@property (nonatomic, readwrite) BOOL mature;
+@property (nonatomic, readwrite) BOOL reported;
 
 @end
 

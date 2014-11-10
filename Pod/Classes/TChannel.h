@@ -84,19 +84,19 @@
  *
  *
  */
-@property (nonatomic, readonly) NSUInteger *delay;
+@property (nonatomic, readonly) NSUInteger delay;
 
 /*
  *
  *
  */
-@property (nonatomic, readonly) NSUInteger *views;
+@property (nonatomic, readonly) NSUInteger views;
 
 /*
  *
  *
  */
-@property (nonatomic, readonly) NSUInteger *follower;
+@property (nonatomic, readonly) NSUInteger follower;
 
 
 
@@ -104,12 +104,12 @@
  *
  *
  */
-@property (nonatomic, readonly) BOOL *mature;
+@property (nonatomic, readonly) BOOL mature;
 
 /*
  *
  *
  */
-@property (nonatomic, readonly) BOOL *reported;
+@property (nonatomic, readonly) BOOL reported;
 
 @end

@@ -108,22 +108,23 @@ static dispatch_queue_t image_request_operation_processing_queue() {
 - (void)setCompletionBlockWithSuccess:(void (^)(MNetworkHTTPRequest *operation, id responseObject))success
                               failure:(void (^)(MNetworkHTTPRequest *operation, NSError *error))failure
 {
+    __block MNetworkImageRequest* this = self;
     self.completionBlock = ^ {
         dispatch_async(image_request_operation_processing_queue(), ^(void) {
-            if (self.error) {
+            if (this.error) {
                 if (failure) {
-                    dispatch_async(self.failureCallbackQueue ?: dispatch_get_main_queue(), ^{
-                        failure(self, self.error);
+                    dispatch_async(this.failureCallbackQueue ?: dispatch_get_main_queue(), ^{
+                        failure(this, this.error);
                     });
                 }
             } else {
                 if (success) {
                     NSImage *image = nil;
 
-                    image = self.responseImage;
+                    image = this.responseImage;
 
-                    dispatch_async(self.successCallbackQueue ?: dispatch_get_main_queue(), ^{
-                        success(self, image);
+                    dispatch_async(this.successCallbackQueue ?: dispatch_get_main_queue(), ^{
+                        success(this, image);
                     });
                 }
             }

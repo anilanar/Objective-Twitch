@@ -100,28 +100,29 @@ static dispatch_queue_t json_request_operation_processing_queue() {
 
 - (void)setCompletionBlockWithSuccess:(void (^)(MNetworkHTTPRequest *operation, id responseObject))success
                               failure:(void (^)(MNetworkHTTPRequest *operation, NSError *error))failure
-{
-    self.completionBlock = ^ {
-        if (self.error) {
+{   
+    __block MNetworkJSONRequest *this = self;
+    this.completionBlock = ^ {
+        if (this.error) {
             if (failure) {
-                dispatch_async(self.failureCallbackQueue ?: dispatch_get_main_queue(), ^{
-                    failure(self, self.error);
+                dispatch_async(this.failureCallbackQueue ?: dispatch_get_main_queue(), ^{
+                    failure(this, this.error);
                 });
             }
         } else {
             dispatch_async(json_request_operation_processing_queue(), ^{
-                id JSON = self.responseJSON;
+                id JSON = this.responseJSON;
 
-                if (self.error) {
+                if (this.error) {
                     if (failure) {
-                        dispatch_async(self.failureCallbackQueue ?: dispatch_get_main_queue(), ^{
-                            failure(self, self.error);
+                        dispatch_async(this.failureCallbackQueue ?: dispatch_get_main_queue(), ^{
+                            failure(this, this.error);
                         });
                     }
                 } else {
                     if (success) {
-                        dispatch_async(self.successCallbackQueue ?: dispatch_get_main_queue(), ^{
-                            success(self, JSON);
+                        dispatch_async(this.successCallbackQueue ?: dispatch_get_main_queue(), ^{
+                            success(this, JSON);
                         });
                     }
                 }
