@@ -83,7 +83,7 @@
 {
     NSString *URL = @"https://api.twitch.tv/kraken/streams/followed";
     NSURLRequest *req = [TwitchAPI URLRequestWithString:URL withAccessToken:accessToken];
-    [MNetworkJSONRequest JSONRequest:req success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+    [[MNetworkJSONRequest JSONRequest:req success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         NSArray *streams = [JSON objectForKey:@"streams"];
         NSMutableArray *channels = [[NSMutableArray alloc] init];
         for(int i = 0; i < streams.count; ++i) {
@@ -99,7 +99,7 @@
         [TwitchAPI runBlock:^{
             block(nil);
         } onMainThread:runOnMainThread];
-    }];
+    }] start];
 }
 
 
