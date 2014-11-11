@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Objective-Twitch"
-  s.version          = "0.1.4"
+  s.version          = "0.1.5"
   s.summary          = "Objective C library to make TwitchAPI calls."
   s.description      = <<-DESC
                        Objective C library to make TwitchAPI calls.
