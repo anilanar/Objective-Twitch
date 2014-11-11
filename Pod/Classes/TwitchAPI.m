@@ -10,6 +10,7 @@
 
 #import "TwitchAPI.h"
 #import "TMethods.h"
+#import "TStream.h"
 
 @interface TwitchAPI()
 
@@ -77,22 +78,22 @@
     }];
 }
 
-+ (void)requestOnlineFollowingChannelsOfUserWithAccessToken:(NSString *)accessToken
++ (void)requestOnlineFollowingStrewamsOfUserWithAccessToken:(NSString *)accessToken
                                           runOnMainThread:(BOOL)runOnMainThread
-                                                withBlock:(void (^)(NSArray *channels))block
+                                                withBlock:(void (^)(NSArray *streams))block
 {
     NSString *URL = @"https://api.twitch.tv/kraken/streams/followed";
     NSURLRequest *req = [TwitchAPI URLRequestWithString:URL withAccessToken:accessToken];
     [[MNetworkJSONRequest JSONRequest:req success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        NSArray *streams = [JSON objectForKey:@"streams"];
-        NSMutableArray *channels = [[NSMutableArray alloc] init];
-        for(int i = 0; i < streams.count; ++i) {
-            TChannel *channel = [[TChannel alloc] initWithDictionary:[streams[i] objectForKey:@"channel"]];
-            [channels addObject:channel];
+        NSArray *streamsData = [JSON objectForKey:@"streams"];
+        NSMutableArray *streams = [[NSMutableArray alloc] init];
+        for(int i = 0; i < streamsData.count; ++i) {
+            TStream *stream = [[TStream alloc] initWithDictionary:streamsData[i]];
+            [streams addObject:stream];
         }
         
         [TwitchAPI runBlock:^{
-            block(channels);
+            block(streams);
         } onMainThread:runOnMainThread];
         
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
