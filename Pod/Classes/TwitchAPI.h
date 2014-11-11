@@ -54,6 +54,14 @@
             runOnMainThread:(BOOL)runOnMainThread
                   withBlock:(void (^)(TUser *user))block;
 
++ (void)requestOnlineFollowingChannelsOfUserWithAccessToken:(NSString *)accessToken
+                                            runOnMainThread:(BOOL)runOnMainThread
+                                                  withBlock:(void (^)(NSArray *channels))block;
+
++ (void)requestUserWithAccessToken:(NSString *)accessToken
+                   runOnMainThread:(BOOL)runOnMainThread
+                         withBlock:(void (^)(TUser *user))block;
+
 /*
  *
  *
