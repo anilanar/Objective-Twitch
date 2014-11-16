@@ -42,7 +42,7 @@
                  runOnMainThread:(BOOL)runOnMainThread
                        withBlock:(void (^)(NSArray *followers))block;
 
-+ (void)requestFollowingChannelsWithUsername:(NSString *)username
++ (void)requestFollowingStreamsWithUsername:(NSString *)username
                              runOnMainThread:(BOOL)runOnMainThread
                                    withBlock:(void (^)(NSArray *channels))block;
 
