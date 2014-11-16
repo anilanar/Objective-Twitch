@@ -14,10 +14,10 @@
 - (instancetype)initWithDictionary:(id)dictionary {
     if(self = [super initWithDictionary:dictionary]) {
         _broadcaster = [dictionary stringSafelyFromKey:@"broadcaster"];
-        
         _viewers = [dictionary uintSafelyFromKey:@"viewers"];
-        
         _channel = [[TChannel alloc] initWithDictionary:[dictionary objectForKey:@"channel"]];
+        _preview = [[dictionary objectForKey:@"preview"] stringSafelyFromKey:@"medium"];
+        
     }
     return self;
 }
