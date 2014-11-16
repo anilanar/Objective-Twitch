@@ -78,7 +78,7 @@
     }] start];
 }
 
-+ (void)requestOnlineFollowingStrewamsOfUserWithAccessToken:(NSString *)accessToken
++ (void)requestOnlineFollowingStreamsOfUserWithAccessToken:(NSString *)accessToken
                                           runOnMainThread:(BOOL)runOnMainThread
                                                 withBlock:(void (^)(NSArray *streams))block
 {
