@@ -66,7 +66,7 @@
 {
     NSString *URL = @"https://api.twitch.tv/kraken/user";
     NSURLRequest *req = [TwitchAPI URLRequestWithString:URL withAccessToken:accessToken];
-    [MNetworkJSONRequest JSONRequest:req success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+    [[MNetworkJSONRequest JSONRequest:req success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
         TUser *user = [[TUser alloc] initWithDictionary:JSON];
         [TwitchAPI runBlock:^{
             block(user);
@@ -75,7 +75,7 @@
         [TwitchAPI runBlock:^{
             block(nil);
         } onMainThread:runOnMainThread];
-    }];
+    }] start];
 }
 
 + (void)requestOnlineFollowingStrewamsOfUserWithAccessToken:(NSString *)accessToken
